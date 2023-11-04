@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ideazy - Community sourced ideas from r/AppIdeas</title>
+    <link href="bounce.css" rel="stylesheet" type="text/css" />
+    <link href="extras.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="overflow:hidden;">
+    <nav>
+        <div class="left" style="text-align: center">
+            <div class="logo" style="background:#90ca99;user-select: none" onclick="window.location.hash = '#TOP'">
+                <h3>✨</h3>
+            </div>
+
+            <h3 class="">Ideazy</h3>
+            <span style="font-size: 12pt;position: absolute;top:60px;left: 0px;text-align: center; width:100vw !important; max-width: none;font-family: 'Clash Grotesk Medium';">Community sourced App ideas from r/AppIdeas</span>
+        </div>
+
+        <div class="buttons">
+        </div>
+    </nav>
+    <div id="home" class="main" style="height:100vh; overflow: scroll;overflow-x: hidden">
+        <h1 style="text-align: center;"><br>Let's find your next app idea!</h1>
+        <button class="cyan" style="text-align: center;align-self: center" onclick="window.location.hash='#idea';getIdea()">Let's go!</button>
+        <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+        <p>
+        <h3>What's so special about Ideazy?</h3>
+        Ideazy is a unique way to find new and exciting app ideas, and to talk with the person who made the idea. Ideazy skips all posts that fit any of the following criteria:
+        <ul>
+            <li>Dating app</li>
+            <li>People asking for feedback on existing apps</li>
+            <li>Is already built (download links, "i built" found in text, asking for testers, etc)</li>
+            <li>Omegle alternatives (we don't need another one...)</li>
+            <li>Asking for something (eg app ideas)</li>
+            <li>People looking for a dev (not the best info)</li>
+            <li>Posts with polls (these are more or less "expreimental" so to speak)</li>
+        </ul>
+        </p>
+    </div>
+    <div id="idea" class="main" style="height:100vh;overflow: scroll;overflow-x: hidden"><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;
+        <a class="cyan" style="text-align: center;align-self: center" href="#top">Back home</a>
+        <h1 style="text-align: center;" id="ptitle">Loading your idea...</h1>
+        <div id="critUnmatch" hidden>
+            <h4>Why did this not meet the criteria?</h4>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Dating App</p>
+            </label>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Asking for feedback</p>
+            </label>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Already built</p>
+            </label>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Omegle alternative</p>
+            </label>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Asking for something</p>
+            </label>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Looking for dev</p>
+            </label>
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Has a poll</p>
+            </label>    
+            <label class="checkbox-container cyan">
+                <input type="checkbox" disabled="">
+                <checkmark></checkmark>
+                <p>Asking for tester</p>
+            </label>   
+        </div>
+        <button class="purple" style="text-align: center;align-self: center" id="rollAgain">Roll again!</button>
+        <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>
+        <a href="" id="post" style="width:100%">
+            <h4 id="title">Title</h4>
+            <p id="body">
+                I am a body
+            </p>
+    </div>
+
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
